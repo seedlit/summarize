@@ -1,0 +1,3 @@
+LOG_LEVEL = "INFO"
+ALLOWED_TYPES = [".pdf", ".txt"]
+MAX_SIZE_BYTES = int(10 * 1024 * 1024)  # 10MB

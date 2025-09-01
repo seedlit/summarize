@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: summarize-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: summarize
+  template:
+    metadata:
+      labels:
+        app: summarize
+    spec:
+      containers:
+      - name: summarize
+        image: summarize-app:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000
