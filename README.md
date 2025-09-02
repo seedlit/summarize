@@ -104,6 +104,13 @@ minikube service summarize-service --url
 
 **Description**: Upload a document (PDF or text file) and receive an AI-generated summary.
 
+### Example
+
+The API can process documents in multiple languages and generate summaries in English. Below is an example with a German train ticket PDF:
+
+![API Example](data/example.png)
+*Example: Input PDF was a train ticket with text in German. The generated summary is in English.*
+
 #### Example using curl:
 ```bash
 curl -X POST "http://localhost:8000/summarize" \
